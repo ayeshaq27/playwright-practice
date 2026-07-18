@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 
 async function main() {
   // Launch a browser - headless: false means you'll SEE it happen
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
 
   // Open a new page (tab)
   const page = await browser.newPage();
